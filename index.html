@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV del Sully</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="imagenes/favicon.png">
+    <script src="javascript.js"></script>
+
+</head>
+<body onload=aLaCarga()> 
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Navegador con fotito de Sulley-->
+        <a class="navbar-brand" href="#">
+          <img src="imagenes/icono.jpg" alt="fotito" style="width:50px;">
+        </a>
+        
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <button type="button" class="btn btn-primary m-3" onclick=mostrar_personal()>Quién soy</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-warning m-3" onclick=mostrar_estudios()>Dónde estudié</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-success m-3" onclick=mostrar_experiencia()>Dónde trabajé</button>
+          </li>
+        </ul>
+    </nav>
+    <div class="jumbotron jumbotron-fluid" >
+        <div class="container" id="jumbo">
+          <h1>James P. Sullivan</h1>
+          <h2>Curriculum Vitae</h2>
+        </div>
+      </div>
+
+      <div class="container-fluid" id="info">
+        <div class="row">
+            <div class="col-sm-8">
+                <div id="inicio">
+                    <h2>Bienvenidos al CV de James P. Sullivan! </h2> 
+                    <p>En esta página encontrará toda la Información sobre James P. "Sulley" Sullivan</p>
+                    <p>Seleccione desde la barra de navegación la Información sobre James que necesita.</p>
+                    <h3>Contáctame:</h3>
+                    <ul>
+                      <li><pi><i class="bi bi-telephone-fill"><strong> Teléfono Fijo:</strong> 4-444-4444</i></p></li>
+                      <li><p><i class="bi bi-phone-vibrate"></i> <strong>Celular:</strong> 15-444-4444</p></li>
+                      <li><i class="bi bi-whatsapp"></i><a href="https://wa.me/154444444"> <strong>Contacto WhatsApp</strong></a></li>
+                      <li><i class="bi bi-envelope-at"></i><a href="mailto:james.sullivan@example.com"><strong> E-mail</strong></a></li>
+                      <li><i class="bi bi-linkedin"></i><a href="www.linked-in.com"><strong> Linked-in</strong> </a></li>
+                    </ul>
+                </div>
+                <div id="personal">
+                    <h2>Información Personal</h2>
+                    <div id="accordion">
+                        <div class="card">
+                          <div class="card-header">
+                            <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                              Edad y estado civil
+                            </a>
+                          </div>
+                          <div id="collapseOne" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                              <P><strong>Edad:</strong> 32 años</P>
+                              <p><strong>Estado Civil:</strong> Soltero</p>
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                            Domicilio
+                          </a>
+                          </div>
+                          <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                              <p><strong>Domicilio:</strong> Avenida Siempre viva 4321 - Villa Domínico - Avellaneda.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                              Contactos
+                            </a>
+                          </div>
+                          <div id="collapseThree" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                              <ul>
+                                <li><p><strong>Teléfono Fijo:</strong> 4-444-4444</p></li>
+                                <li><p><strong>Celular:</strong> 15-444-4444</p></li>
+                                <li><a href="https://wa.me/154444444">Contacto WhatsApp</a></li>
+                                <li><a href="mailto:james.sullivan@example.com"><strong>E-mail:</strong> Enviar e-mail</a></li>
+                                <li><a href="www.linked-in.com"><strong>Linked-in:</strong> Perfil </a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                    <div id="estudios">
+                    <h2>Estudios Cursados</h2>
+                    <div id="accordion">
+                        <div class="card">
+                          <div class="card-header">
+                            <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                              Estudios Secundarios
+                            </a>
+                          </div>
+                          <div id="collapseOne" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                              <ul>
+                                <li><strong>Escuela Superior de Mounstruos N°1 - "Don José de San Mostrín"</strong></li>
+                                <li><strong> Título obtenido:</strong> Bachiller con orientación mounstruosa </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                            Estudios Universitarios
+                          </a>
+                          </div>
+                          <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                              <ul>
+                                <li><strong>Monsters University</strong></li>
+                                <li><strong> Años cursados:</strong> Primer año, sin terminar la cursada.</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                              Cursos realizados
+                            </a>
+                          </div>
+                          <div id="collapseThree" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                              <ul>
+                                <li><strong>Argentina Programa 4.0:</strong> Primer tramo.</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div id="expLab">
+                    <h2>Experiencia laboral</h2>
+                    <ul>
+                      <li><h3>Monsters Inc.</h3></li>
+                    </ul>
+                    <p><strong>Puesto laboral:</strong> Asustador profesional.</p>
+                    <p><strong>Tiempo en el puesto:</strong> 10 años.</p>
+                </div>
+
+            </div>
+        <div class="col-sm-4">
+            <img src="imagenes/Sulley.webp" class="img-fluid" alt="un ejemplo de facha">
+            <h2>James "Sulley" Sullivan</h2>
+        </div>
+        </div>
+      </div>
+      
+      
+<!-- Footer -->
+    <footer class="page-footer font-small blue" id="foot">
+
+    
+    <div class="footer-copyright text-center py-3"> 2023 --  Hecho por:
+      <a href="https://github.com/jbonomo1982"> Juan Manuel Bonomo</a>
+    </div>
+
+  
+</footer>
+</body>
+</html>
