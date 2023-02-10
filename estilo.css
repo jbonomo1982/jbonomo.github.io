@@ -1,0 +1,17 @@
+.jumbotron{
+    background-image: url(imagenes/Jumbo.jpg);
+    background-size: cover;
+    color: #00ff0d;
+}
+
+footer{
+    
+    bottom: 0;
+    text-align: center;
+}
+
+button{
+    text-align: center;
+    width: 250px;
+    height:50px;
+}
